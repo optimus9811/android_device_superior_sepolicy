@@ -8,6 +8,9 @@ add_service(system_server, dc_dimming_service);
 
 add_service(system_server, app_lock_service);
 
+
+allow system_server pocket_judge_sysfs:dir search;
+allow system_server pocket_judge_sysfs:file rw_file_perms;
 allow system_server pocket_service:service_manager { add find };
 
 # Use HALs
