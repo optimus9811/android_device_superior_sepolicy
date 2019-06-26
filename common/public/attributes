@@ -1,5 +1,8 @@
 hal_attribute(lineage_livedisplay)
 hal_attribute(lineage_touch)
 
+# FOD
+hal_attribute(lineage_fod)
+
 # HALs
 hal_attribute(lineage_camera_motor)
