@@ -6,3 +6,6 @@ profile                                   u:object_r:lineage_profile_service:s0
 adbroot_service                           u:object_r:adbroot_service:s0
 
 app_lock                                  u:object_r:app_lock_service:s0
+
+# DC Dimming
+dc_dim_service		                  u:object_r:dc_dimming_service:s0
