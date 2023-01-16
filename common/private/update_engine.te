@@ -1,3 +1,8 @@
+# Updater local installation
+allow update_engine self:capability { dac_override dac_read_search };
+allow update_engine fuse:file r_file_perms;
+allow update_engine fuse:dir r_dir_perms;
+
 # Allow update_engine to call the callback function provided by updater_app
 binder_call(update_engine, updater_app)
 
