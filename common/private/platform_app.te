@@ -12,3 +12,6 @@ hal_client_domain(platform_app, hal_lineage_powershare)
 
 # MatLog calls dmesg
 allow platform_app kernel:system syslog_read;
+
+# DC Dimming
+allow platform_app vendor_sysfs_dc_dim:file rw_file_perms;
